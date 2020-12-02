@@ -1,0 +1,49 @@
+.pagination {
+  margin: 8rem 0;
+  font-weight: 400;
+  @include MEDIA_TAB {
+    margin-bottom: 6.4rem;
+  }
+
+  .page-numbers {
+    margin-right: 1rem;
+    color: $DEFAULT_BLUE;
+  }
+
+  .current {
+    border-bottom: 1px solid black;
+    color: $DEFAULT_BLUE;
+    position: relative;
+    top: -1px;
+  }
+
+  .prev {
+    display: inline-block;
+    background-color: $DEFAULT_COLOR;
+    color: white;
+    font-size: 1.6rem;
+    padding: 1.6rem 6rem;
+    border-radius: 5px;
+    margin-right: 3rem;
+    @include MEDIA_TAB {
+      font-size: 1.2rem;
+      padding: 1.6rem 3.7rem;
+      margin-right: 2.18rem;
+    }
+  }
+
+  .next {
+    display: inline-block;
+    background-color: $DEFAULT_COLOR;
+    color: white;
+    font-size: 1.6rem;
+    padding: 1.6rem 6rem;
+    border-radius: 5px;
+    margin-left: 3rem;
+    @include MEDIA_TAB {
+      font-size: 1.2rem;
+      padding: 1.6rem 3.7rem;
+      margin-left: 2.18rem;
+    }
+  }
+}

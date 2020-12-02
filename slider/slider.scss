@@ -1,0 +1,41 @@
+#slider-area {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+#pager {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  @include MEDIA_TAB {
+    top: 95%;
+    width: 10rem;
+  }
+
+  .prev,
+  .next {
+    line-height: 40px;
+    font-size: 3.4rem;
+    position: absolute;
+    top: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+    text-decoration: none;
+    color: $DEFAULT_COLOR;
+  }
+
+  .prev {
+    left: 0;
+  }
+
+  .next {
+    right: 0;
+  }
+}
